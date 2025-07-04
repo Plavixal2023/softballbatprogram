@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" version="1.1">
+  <defs>
+    <!-- Carbon Fiber Pattern -->
+    <pattern id="carbon-fiber" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="#333333"/>
+      <path d="M0,0 L20,20 M20,0 L0,20" stroke="#222222" stroke-width="1"/>
+      <path d="M10,0 L10,20 M0,10 L20,10" stroke="#222222" stroke-width="0.5"/>
+    </pattern>
+    
+    <!-- Gradient for TPE material -->
+    <linearGradient id="grip-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9932cc;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Micro-capsule Pattern -->
+    <pattern id="microcapsule-pattern" patternUnits="userSpaceOnUse" width="30" height="30">
+      <circle cx="5" cy="5" r="1.5" fill="#ffcccc" stroke="#ff9999" stroke-width="0.2"/>
+      <circle cx="15" cy="10" r="1.8" fill="#ffcccc" stroke="#ff9999" stroke-width="0.2"/>
+      <circle cx="25" cy="5" r="1.2" fill="#ffcccc" stroke="#ff9999" stroke-width="0.2"/>
+      <circle cx="10" cy="20" r="1.7" fill="#e6ccff" stroke="#cc99ff" stroke-width="0.2"/>
+      <circle cx="20" cy="25" r="1.4" fill="#e6ccff" stroke="#cc99ff" stroke-width="0.2"/>
+      <circle cx="28" cy="18" r="1.6" fill="#e6ccff" stroke="#cc99ff" stroke-width="0.2"/>
+    </pattern>
+    
+    <!-- Arrowhead marker for dimension lines -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Title Block -->
+  <rect x="800" y="700" width="380" height="80" fill="white" stroke="black" stroke-width="2"/>
+  <text x="810" y="720" font-family="Arial" font-size="16" font-weight="bold">FLORAL GRIP - CROSS SECTION</text>
+  <text x="810" y="740" font-family="Arial" font-size="12">YOUTH SOFTBALL BAT HANDLE GRIP</text>
+  <text x="810" y="760" font-family="Arial" font-size="12">SCENTED TPE OVER CARBON FIBER CORE</text>
+  <text x="810" y="775" font-family="Arial" font-size="10">DATE: 07/04/2025 | DRAWING NO: FG-CS-001</text>
+  
+  <!-- Main Cross Section View -->
+  <g id="cross-section" transform="translate(300, 400)">
+    <!-- Carbon Fiber Core -->
+    <circle cx="0" cy="0" r="60" fill="url(#carbon-fiber)" stroke="black" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial" font-size="14" text-anchor="middle" fill="white">CARBON FIBER CORE</text>
+    <text x="0" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="white">40T CARBON COMPOSITE</text>
+    
+    <!-- TPE Grip Layer -->
+    <circle cx="0" cy="0" r="120" fill="url(#grip-gradient)" stroke="black" stroke-width="2" fill-opacity="0.7"/>
+    
+    <!-- Micro-capsule Distribution -->
+    <circle cx="0" cy="0" r="120" fill="url(#microcapsule-pattern)" fill-opacity="0.5" stroke="none"/>
+    
+    <!-- Flower Petal Texture Pattern -->
+    <g id="petal-pattern">
+      <!-- 8mm repeat pattern around the circumference -->
+      <path d="M120,0 Q130,10 120,20 Q110,10 120,0 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M113.1,40.4 Q123.1,50.4 113.1,60.4 Q103.1,50.4 113.1,40.4 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M93.9,76.5 Q103.9,86.5 93.9,96.5 Q83.9,86.5 93.9,76.5 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M64.3,104.3 Q74.3,114.3 64.3,124.3 Q54.3,114.3 64.3,104.3 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M27.6,116.1 Q37.6,126.1 27.6,136.1 Q17.6,126.1 27.6,116.1 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M-12.9,115.1 Q-2.9,125.1 -12.9,135.1 Q-22.9,125.1 -12.9,115.1 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M-51.5,101.2 Q-41.5,111.2 -51.5,121.2 Q-61.5,111.2 -51.5,101.2 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M-83.9,76.5 Q-73.9,86.5 -83.9,96.5 Q-93.9,86.5 -83.9,76.5 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M-106.1,43.1 Q-96.1,53.1 -106.1,63.1 Q-116.1,53.1 -106.1,43.1 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M-116.1,-12.9 Q-106.1,-2.9 -116.1,7.1 Q-126.1,-2.9 -116.1,-12.9 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M-113.1,-40.4 Q-103.1,-30.4 -113.1,-20.4 Q-123.1,-30.4 -113.1,-40.4 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M-93.9,-76.5 Q-83.9,-66.5 -93.9,-56.5 Q-103.9,-66.5 -93.9,-76.5 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M-64.3,-104.3 Q-54.3,-94.3 -64.3,-84.3 Q-74.3,-94.3 -64.3,-104.3 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M-27.6,-116.1 Q-17.6,-106.1 -27.6,-96.1 Q-37.6,-106.1 -27.6,-116.1 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M12.9,-115.1 Q22.9,-105.1 12.9,-95.1 Q2.9,-105.1 12.9,-115.1 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M51.5,-101.2 Q61.5,-91.2 51.5,-81.2 Q41.5,-91.2 51.5,-101.2 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M83.9,-76.5 Q93.9,-66.5 83.9,-56.5 Q73.9,-66.5 83.9,-76.5 Z" fill="none" stroke="black" stroke-width="1"/>
+      <path d="M106.1,-43.1 Q116.1,-33.1 106.1,-23.1 Q96.1,-33.1 106.1,-43.1 Z" fill="none" stroke="black" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Dimension Lines for Cross Section -->
+  <!-- Carbon Core Diameter -->
+  <line x1="180" y1="350" x2="180" y2="450" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="175" y1="350" x2="185" y2="350" stroke="#333" stroke-width="1"/>
+  <line x1="175" y1="450" x2="185" y2="450" stroke="#333" stroke-width="1"/>
+  <line x1="180" y1="350" x2="180" y2="450" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="160" y="400" font-family="Arial" font-size="12" text-anchor="end">19.0mm CORE DIAMETER</text>
+  
+  <!-- Total Grip Diameter -->
+  <line x1="480" y1="320" x2="480" y2="480" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="475" y1="320" x2="485" y2="320" stroke="#333" stroke-width="1"/>
+  <line x1="475" y1="480" x2="485" y2="480" stroke="#333" stroke-width="1"/>
+  <line x1="480" y1="320" x2="480" y2="480" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="500" y="400" font-family="Arial" font-size="12" text-anchor="start">24.0mm TOTAL GRIP DIAMETER</text>
+  
+  <!-- TPE Layer Thickness -->
+  <line x1="360" y1="280" x2="420" y2="280" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="360" y1="275" x2="360" y2="285" stroke="#333" stroke-width="1"/>
+  <line x1="420" y1="275" x2="420" y2="285" stroke="#333" stroke-width="1"/>
+  <line x1="360" y1="280" x2="420" y2="280" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="390" y="270" font-family="Arial" font-size="12" text-anchor="middle">2.5mm TPE LAYER</text>
+  
+  <!-- Petal Height Dimension -->
+  <line x1="425" y1="400" x2="445" y2="400" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="425" y1="395" x2="425" y2="405" stroke="#333" stroke-width="1"/>
+  <line x1="445" y1="395" x2="445" y2="405" stroke="#333" stroke-width="1"/>
+  <line x1="425" y1="400" x2="445" y2="400" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="435" y="390" font-family="Arial" font-size="10" text-anchor="middle">3.0mm</text>
+  <text x="435" y="380" font-family="Arial" font-size="10" text-anchor="middle">PETAL HEIGHT</text>
+  
+  <!-- Material Labels -->
+  <text x="300" y="250" font-family="Arial" font-size="14" font-weight="bold">MATERIAL COMPOSITION:</text>
+  <text x="300" y="270" font-family="Arial" font-size="12">• CORE: 40T CARBON FIBER COMPOSITE</text>
+  <text x="300" y="290" font-family="Arial" font-size="12">• GRIP: TPE (SHORE A 60), MEDICAL-GRADE</text>
+  <text x="300" y="310" font-family="Arial" font-size="12">• SCENT: LAVENDER & ROSE MICRO-CAPSULES (5-8µm)</text>
+  
+  <!-- Magnified Detail View of Single Petal -->
+  <g id="detail-view" transform="translate(800, 400)">
+    <!-- Boundary Box -->
+    <rect x="-150" y="-150" width="300" height="300" fill="white" stroke="black" stroke-width="2"/>
+    
+    <!-- Title for Detail View -->
+    <text x="0" y="-130" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">PETAL TEXTURE DETAIL (5X MAGNIFICATION)</text>
+    
+    <!-- Base Grip Layer -->
+    <rect x="-100" y="-50" width="200" height="100" fill="url(#grip-gradient)" stroke="black" stroke-width="1"/>
+    
+    <!-- Micro-capsules in TPE -->
+    <g id="microcapsules">
+      <circle cx="-80" cy="-20" r="5" fill="#ffcccc" stroke="#ff9999" stroke-width="0.5"/>
+      <text x="-80" cy="-20" font-family="Arial" font-size="6" text-anchor="middle">LAVENDER</text>
+      <circle cx="-50" cy="10" r="6" fill="#ffcccc" stroke="#ff9999" stroke-width="0.5"/>
+      <circle cx="-10" cy="-30" r="4" fill="#ffcccc" stroke="#ff9999" stroke-width="0.5"/>
+      <circle cx="20" cy="20" r="7" fill="#e6ccff" stroke="#cc99ff" stroke-width="0.5"/>
+      <text x="20" cy="20" font-family="Arial" font-size="6" text-anchor="middle">ROSE</text>
+      <circle cx="60" cy="-10" r="5" fill="#e6ccff" stroke="#cc99ff" stroke-width="0.5"/>
+      <circle cx="80" cy="30" r="4" fill="#e6ccff" stroke="#cc99ff" stroke-width="0.5"/>
+    </g>
+    
+    <!-- Single Petal Detail -->
+    <path d="M0,-50 Q20,-30 0,-10 Q-20,-30 0,-50 Z" fill="url(#grip-gradient)" stroke="black" stroke-width="1.5"/>
+    
+    <!-- Dimension Lines for Petal -->
+    <!-- Petal Height -->
+    <line x1="-30" y1="-50" x2="-30" y2="-10" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="-35" y1="-50" x2="-25" y2="-50" stroke="#333" stroke-width="1"/>
+    <line x1="-35" y1="-10" x2="-25" y2="-10" stroke="#333" stroke-width="1"/>
+    <line x1="-30" y1="-50" x2="-30" y2="-10" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+    <text x="-40" y="-30" font-family="Arial" font-size="10" text-anchor="end">3.0mm</text>
+    
+    <!-- Petal Width -->
+    <line x1="-20" y1="-60" x2="20" y2="-60" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="-20" y1="-65" x2="-20" y2="-55" stroke="#333" stroke-width="1"/>
+    <line x1="20" y1="-65" x2="20" y2="-55" stroke="#333" stroke-width="1"/>
+    <line x1="-20" y1="-60" x2="20" y2="-60" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+    <text x="0" y="-70" font-family="Arial" font-size="10" text-anchor="middle">4.0mm</text>
+    
+    <!-- Pattern Repeat -->
+    <line x1="-100" y1="70" x2="-20" y2="70" stroke="#333" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="-100" y1="65" x2="-100" y2="75" stroke="#333" stroke-width="1"/>
+    <line x1="-20" y1="65" x2="-20" y2="75" stroke="#333" stroke-width="1"/>
+    <line x1="-100" y1="70" x2="-20" y2="70" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+    <text x="-60" y="85" font-family="Arial" font-size="10" text-anchor="middle">8.0mm PATTERN REPEAT</text>
+    
+    <!-- Microcapsule Size Reference -->
+    <circle cx="70" cy="70" r="8" fill="none" stroke="#333" stroke-width="1"/>
+    <text x="70" cy="70" font-family="Arial" font-size="8" text-anchor="middle">5-8µm</text>
+    <text x="70" cy="85" font-family="Arial" font-size="8" text-anchor="middle">ACTUAL SIZE</text>
+    <text x="70" cy="95" font-family="Arial" font-size="8" text-anchor="middle">(NOT TO SCALE)</text>
+  </g>
+  
+  <!-- Additional Notes -->
+  <g id="notes" transform="translate(150, 600)">
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold">NOTES:</text>
+    <text x="0" y="20" font-family="Arial" font-size="12">1. FLOWER PETAL TEXTURE REPEATS EVERY 8mm AROUND CIRCUMFERENCE</text>
+    <text x="0" y="40" font-family="Arial" font-size="12">2. MICRO-CAPSULES DISTRIBUTED UNIFORMLY THROUGHOUT TPE MATERIAL (2.8% BY WEIGHT)</text>
+    <text x="0" y="60" font-family="Arial" font-size="12">3. COLOR GRADIENT TRANSITIONS FROM PINK (PROXIMAL) TO PURPLE (DISTAL)</text>
+    <text x="0" y="80" font-family="Arial" font-size="12">4. GRIP SURFACE TEXTURE PROVIDES ENHANCED FRICTION COEFFICIENT (μ=0.82)</text>
+    <text x="0" y="100" font-family="Arial" font-size="12">5. SCENT RELEASE ACTIVATED BY FRICTION AND BODY HEAT</text>
+  </g>
+</svg>

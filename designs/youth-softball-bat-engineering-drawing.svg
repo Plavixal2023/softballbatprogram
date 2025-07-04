@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" version="1.1">
+  <defs>
+    <pattern id="floral-pattern" patternUnits="userSpaceOnUse" width="30" height="30">
+      <circle cx="15" cy="15" r="5" fill="none" stroke="#ff69b4" stroke-width="1"/>
+      <path d="M15,10 Q20,5 15,0 Q10,5 15,10" fill="#ff69b4" stroke="none"/>
+      <path d="M15,10 Q20,15 25,10 Q20,5 15,10" fill="#ff69b4" stroke="none"/>
+      <path d="M15,10 Q15,15 20,20 Q25,15 15,10" fill="#ff69b4" stroke="none"/>
+      <path d="M15,10 Q10,15 5,10 Q10,5 15,10" fill="#ff69b4" stroke="none"/>
+      <path d="M15,10 Q10,15 5,20 Q0,15 15,10" fill="#ff69b4" stroke="none"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+  
+  <!-- Title Block -->
+  <rect x="800" y="700" width="380" height="80" fill="white" stroke="black" stroke-width="2"/>
+  <text x="810" y="720" font-family="Arial" font-size="16" font-weight="bold">YOUTH SOFTBALL BAT - ENGINEERING DRAWING</text>
+  <text x="810" y="740" font-family="Arial" font-size="12">USSSA COMPLIANT - CERTIFICATION: 1-11YS-29-17</text>
+  <text x="810" y="760" font-family="Arial" font-size="12">WEIGHT: 17 OZ | DROP: -12 | LENGTH: 29 INCHES</text>
+  <text x="810" y="775" font-family="Arial" font-size="10">DESIGNED FOR 11-YEAR-OLD PLAYERS | DATE: 07/04/2025</text>
+  
+  <!-- Main Bat Drawing - Side View -->
+  <g id="bat-side-view">
+    <!-- Barrel -->
+    <path d="M200,300 L600,300 C620,300 630,290 630,275 C630,260 620,250 600,250 L200,250 C180,250 170,260 170,275 C170,290 180,300 200,300 Z" 
+          fill="white" stroke="black" stroke-width="2"/>
+    
+    <!-- Taper -->
+    <path d="M170,275 L170,275 C170,290 180,300 200,300 L230,300 C210,310 190,310 170,310 C150,310 140,320 140,335 C140,350 150,360 170,360 L230,360 C210,370 190,370 170,370 C150,370 130,380 130,395 C130,410 150,420 170,420 L700,420 L700,250 L600,250 C580,250 570,260 570,275 C570,290 580,300 600,300 L700,300 L700,250"
+          fill="none" stroke="black" stroke-width="2"/>
+    
+    <!-- Handle -->
+    <rect x="700" y="250" width="300" height="50" rx="25" ry="25" fill="url(#floral-pattern)" stroke="black" stroke-width="2"/>
+    
+    <!-- Knob -->
+    <ellipse cx="1025" cy="275" rx="35" ry="40" fill="white" stroke="black" stroke-width="2"/>
+  </g>
+  
+  <!-- Dimension Lines -->
+  <!-- Total Length -->
+  <line x1="130" y1="200" x2="1060" y2="200" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="130" y1="195" x2="130" y2="205" stroke="#333" stroke-width="1"/>
+  <line x1="1060" y1="195" x2="1060" y2="205" stroke="#333" stroke-width="1"/>
+  <line x1="130" y1="200" x2="1060" y2="200" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="570" y="190" font-family="Arial" font-size="14" text-anchor="middle">29 INCHES (TOTAL LENGTH)</text>
+  
+  <!-- Barrel Diameter -->
+  <line x1="400" y1="230" x2="400" y2="320" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="395" y1="230" x2="405" y2="230" stroke="#333" stroke-width="1"/>
+  <line x1="395" y1="320" x2="405" y2="320" stroke="#333" stroke-width="1"/>
+  <line x1="400" y1="230" x2="400" y2="320" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="400" y="225" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-90, 400, 225)">2.25" BARREL DIAMETER</text>
+  
+  <!-- Handle Diameter -->
+  <line x1="850" y1="230" x2="850" y2="320" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="845" y1="230" x2="855" y2="230" stroke="#333" stroke-width="1"/>
+  <line x1="845" y1="320" x2="855" y2="320" stroke="#333" stroke-width="1"/>
+  <line x1="850" y1="230" x2="850" y2="320" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="850" y="225" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-90, 850, 225)">0.95" HANDLE DIAMETER</text>
+  
+  <!-- Knob Diameter -->
+  <line x1="1025" y1="215" x2="1025" y2="335" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="1020" y1="215" x2="1030" y2="215" stroke="#333" stroke-width="1"/>
+  <line x1="1020" y1="335" x2="1030" y2="335" stroke="#333" stroke-width="1"/>
+  <line x1="1025" y1="215" x2="1025" y2="335" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="1025" y="210" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-90, 1025, 210)">1.75" KNOB DIAMETER</text>
+  
+  <!-- Grip Length -->
+  <line x1="700" y1="350" x2="1000" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="700" y1="345" x2="700" y2="355" stroke="#333" stroke-width="1"/>
+  <line x1="1000" y1="345" x2="1000" y2="355" stroke="#333" stroke-width="1"/>
+  <line x1="700" y1="350" x2="1000" y2="350" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="850" y="370" font-family="Arial" font-size="12" text-anchor="middle">10" GRIP LENGTH WITH FLORAL PATTERN</text>
+  
+  <!-- Sweet Spot Indicator -->
+  <line x1="170" y1="450" x2="170" y2="470" stroke="#333" stroke-width="1"/>
+  <line x1="330" y1="450" x2="330" y2="470" stroke="#333" stroke-width="1"/>
+  <line x1="170" y1="460" x2="330" y2="460" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="250" y="480" font-family="Arial" font-size="12" text-anchor="middle">SWEET SPOT ZONE (5-9" FROM BARREL END)</text>
+  <rect x="170" y="275" width="160" height="50" fill="none" stroke="#ff0000" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Cross Sections -->
+  <!-- Barrel Cross Section -->
+  <circle cx="400" cy="550" r="56" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="400" cy="550" r="50" fill="white" stroke="black" stroke-width="1"/>
+  <text x="400" y="555" font-family="Arial" font-size="10" text-anchor="middle">BARREL CROSS-SECTION</text>
+  <text x="400" y="570" font-family="Arial" font-size="8" text-anchor="middle">WALL THICKNESS: 0.25"</text>
+  
+  <!-- Handle Cross Section -->
+  <circle cx="600" cy="550" r="24" fill="url(#floral-pattern)" stroke="black" stroke-width="2"/>
+  <text x="600" y="590" font-family="Arial" font-size="10" text-anchor="middle">HANDLE CROSS-SECTION</text>
+  
+  <!-- Grip Detail View -->
+  <g transform="translate(800, 500) scale(2)">
+    <rect x="0" y="0" width="50" height="30" fill="url(#floral-pattern)" stroke="black" stroke-width="1"/>
+    <text x="25" y="45" font-family="Arial" font-size="6" text-anchor="middle">FLORAL GRIP PATTERN DETAIL</text>
+    <text x="25" y="55" font-family="Arial" font-size="5" text-anchor="middle">SCENTED WITH LAVENDER AND ROSE</text>
+  </g>
+  
+  <!-- Additional Specifications -->
+  <g id="specifications" transform="translate(150, 600)">
+    <text x="0" y="0" font-family="Arial" font-size="14" font-weight="bold">SPECIFICATIONS:</text>
+    <text x="0" y="20" font-family="Arial" font-size="12">• MATERIAL: COMPOSITE ALUMINUM ALLOY</text>
+    <text x="0" y="40" font-family="Arial" font-size="12">• WEIGHT: 17 OZ (ULTRA-LIGHT FOR BEGINNERS)</text>
+    <text x="0" y="60" font-family="Arial" font-size="12">• DROP: -12 (LENGTH-WEIGHT DIFFERENTIAL)</text>
+    <text x="0" y="80" font-family="Arial" font-size="12">• VIBRATION DAMPENING ZONES IN HANDLE TRANSITION</text>
+    <text x="0" y="100" font-family="Arial" font-size="12">• BALANCED SWING WEIGHT FOR BETTER CONTROL</text>
+    <text x="0" y="120" font-family="Arial" font-size="12">• OPTIMIZED FOR 11-YEAR-OLD PLAYER (68" HEIGHT)</text>
+  </g>
+</svg>
